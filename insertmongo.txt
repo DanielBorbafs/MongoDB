@@ -1,0 +1,25 @@
+use cidades
+
+db.createCollection('Estados')
+
+db.estados.insert({
+    nome: "São Paulo",
+    sigla: "RJ",
+    regiao: "Sudeste",
+    cidades: [{
+        _id: ObjectId(),
+        nome: "Niteroi",
+        area: 133.9,
+        populacao: 487562
+    }, {
+        _id: ObjectId(),
+        nome: "Guarulhos",
+        populacao: 511000,
+        prefeito: Jose alckman
+    }, {
+        _id ObjectId(),
+        nome:"São Paoulo",
+        distanciaCapital: 87,
+        populacao: 554554   
+    }]
+})
